@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>StudentBiz AI</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f4ff;--card:#fff;--tx:#1e1b3a;--mu:#4b4a68;--pr:#5b21b6;--bl:#1d4ed8;--bd:#cfcbe8;--ok:#166534;--er:#b91c1c;--on:#fff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg:#14112b;--card:#1f1b3d;--tx:#f1efff;--mu:#c3c0e0;--pr:#c4b5fd;--bl:#93c5fd;--bd:#4a4580;--ok:#86efac;--er:#fca5a5;--on:#14112b}}
+:root[data-theme="dark"]{color-scheme:dark;--bg:#14112b;--card:#1f1b3d;--tx:#f1efff;--mu:#c3c0e0;--pr:#c4b5fd;--bl:#93c5fd;--bd:#4a4580;--ok:#86efac;--er:#fca5a5;--on:#14112b}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a.skip{position:absolute;left:-999px}a.skip:focus{left:8px;top:8px;background:var(--card);padding:8px;z-index:9}
+header{background:linear-gradient(90deg,#4c1d95,#1d4ed8);color:#fff;padding:12px 16px}
+header b{font-size:1.15rem}header nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+nav a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:8px;font-size:.92rem;border:1px solid transparent}
+nav a[aria-current=page]{background:#fff;color:#3b0f8c;font-weight:600}nav a:hover{border-color:#fff}
+main{max-width:980px;margin:0 auto;padding:16px}section[hidden]{display:none}
+h1{font-size:1.8rem;line-height:1.2;margin:.2em 0}h2{margin:.2em 0 .5em;font-size:1.4rem}h3{margin:.8em 0 .3em}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+label{display:block;font-weight:600;margin:12px 0 4px}.hint{color:var(--mu);font-size:.88rem;font-weight:400}
+input,select,textarea{width:100%;padding:10px;border:2px solid var(--bd);border-radius:8px;background:var(--card);color:var(--tx);font:inherit}
+textarea{min-height:80px}fieldset{border:2px solid var(--bd);border-radius:8px;margin:12px 0}
+fieldset label{display:inline-flex;gap:6px;align-items:center;font-weight:400;margin:4px 12px 4px 0}fieldset input{width:auto}
+button{background:var(--pr);color:var(--on);border:2px solid var(--pr);border-radius:8px;padding:10px 16px;font:inherit;font-weight:600;cursor:pointer;margin:4px 4px 4px 0}
+button.alt{background:transparent;color:var(--pr)}button:disabled{opacity:.6;cursor:wait}
+:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+.err{color:var(--er);font-size:.9rem;min-height:1.2em}.ok{color:var(--ok)}
+.badge{display:inline-block;padding:2px 10px;border-radius:99px;font-size:.8rem;font-weight:700;border:1px solid var(--pr);color:var(--pr)}
+.out{white-space:pre-wrap;background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:12px;margin-top:8px}
+.bar{display:grid;grid-template-columns:minmax(80px,28%) 1fr 56px;gap:8px;align-items:center;margin:4px 0;font-size:.9rem}
+.bar i{display:block;height:16px;background:linear-gradient(90deg,#7c3aed,#2563eb);border-radius:4px}
+table{border-collapse:collapse;width:100%}th,td{border:1px solid var(--bd);padding:8px;text-align:left}.scroll{overflow-x:auto}
+#chat{max-height:340px;overflow:auto}.m{padding:8px 12px;border-radius:10px;margin:6px 0;max-width:88%;white-space:pre-wrap}
+.u{background:var(--pr);color:var(--on);margin-left:auto}.b{background:var(--bg);border:1px solid var(--bd)}
+footer{text-align:center;color:var(--mu);font-size:.85rem;padding:20px}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header><b>🎓 StudentBiz AI</b><nav id="nav" aria-label="Main"></nav></header>
+<main id="main" tabindex="-1">
+
+<section id="home"><div class="card"><h1>Turn Your Business Challenges Into Marketing Opportunities.</h1>
+<p>Welcome! StudentBiz AI is a free smart marketing assistant for student entrepreneurs. Describe your business, get a personalized analysis, generate captions and scripts, analyze your survey results, and follow a simple 7-day plan. No account needed.</p>
+<button data-go="analysis">Analyze My Business</button></div>
+<div class="grid">
+<div class="card"><h3>📋 Business Analysis</h3><p>Find your biggest marketing challenges and opportunities.</p></div>
+<div class="card"><h3>✨ Content Generator</h3><p>Captions, TikTok scripts, headlines and more in 5 tones.</p></div>
+<div class="card"><h3>📊 Survey Analysis</h3><p>Upload customer survey data and see charts from your real numbers.</p></div>
+<div class="card"><h3>💬 BizBuddy</h3><p>A chatbot that knows your business and suggests affordable ideas.</p></div></div>
+<div class="card"><h3>Benefits for student entrepreneurs</h3><p>Affordable ideas that fit a small budget. Plain-language advice for beginners. Decisions based on your own customer data. Results are never guaranteed: they depend on execution, pricing, product quality and customer demand.</p></div></section>
+
+<section id="analysis" hidden><h2>Tell Us About Your Business</h2>
+<form id="bf" class="card" novalidate>
+<label for="name">Business name <span class="hint">(required)</span></label><input id="name" required><div class="err" id="e-name" aria-live="polite"></div>
+<label for="type">Type of business <span class="hint">(required)</span></label><select id="type" required><option value="">Choose…</option><option>Food</option><option>Clothing</option><option>Beauty Products</option><option>Services</option><option>Other</option></select><div class="err" id="e-type" aria-live="polite"></div>
+<label for="prod">Products or services offered <span class="hint">(required)</span></label><textarea id="prod"></textarea><div class="err" id="e-prod" aria-live="polite"></div>
+<label for="cust">Target customers <span class="hint">(required)</span></label><input id="cust" placeholder="e.g. classmates, dorm residents"><div class="err" id="e-cust" aria-live="polite"></div>
+<label for="plat">Primary marketing platform</label><select id="plat"><option>Facebook</option><option>TikTok</option><option>Instagram</option><option>Shopee</option><option>Other</option></select>
+<fieldset><legend>Business challenges (pick any)</legend><span id="ch"></span></fieldset>
+<label for="chO">Other challenge <span class="hint">(optional)</span></label><input id="chO">
+<label for="cur">Current marketing strategy</label><textarea id="cur"></textarea>
+<label for="bud">Monthly marketing budget in ₱ <span class="hint">(optional)</span></label><input id="bud" type="number" min="0" inputmode="numeric">
+<label for="goal">Business goals</label><textarea id="goal"></textarea>
+<button type="submit" id="go">Analyze My Business</button><span id="st" role="status" aria-live="polite"></span></form>
+<div id="res" hidden>
+<div class="card"><h2>Your Analysis <span class="badge" id="mode1"></span></h2><div class="out" id="an"></div>
+<button class="alt" data-copy="an">Copy</button><button class="alt" data-dl="an">Download</button></div>
+<div class="card"><h2>Sales Improvement Ideas</h2><div class="out" id="sales"></div><p class="hint">Results are not guaranteed. They depend on execution, pricing, product quality and customer demand.</p></div>
+<div class="card"><h2>Promotional Content Generator</h2>
+<div class="grid"><div><label for="ctype">Content type</label><select id="ctype"><option>Facebook caption</option><option>TikTok video script</option><option>Instagram caption</option><option>Poster headline</option><option>Product description</option><option>Discount announcement</option><option>Call-to-action message</option></select></div>
+<div><label for="tone">Tone</label><select id="tone"><option>Friendly</option><option>Professional</option><option>Persuasive</option><option>Trendy</option><option>Funny</option></select></div></div>
+<button id="gen">Generate</button><div class="out" id="gout" aria-live="polite">Your content will appear here.</div>
+<button class="alt" data-copy="gout">Copy</button><button class="alt" data-dl="gout">Download</button></div>
+<div class="card"><h2>💬 BizBuddy</h2><div id="chat" role="log" aria-live="polite"><div class="m b">Hi! I’m BizBuddy. Ask me about sales, what to post, or promotions.</div></div>
+<label for="q">Your question</label><input id="q" placeholder="How can I increase my sales?">
+<button id="ask">Send</button></div></div></section>
+
+<section id="ai" hidden><h2>AI Marketing Assistant</h2><div class="card"><p>Fill in the business form first so the assistant can personalize its answers. Then generate content and chat with BizBuddy right below the analysis.</p><button data-go="analysis">Go to the business form</button></div></section>
+
+<section id="trends" hidden><h2>Trending Marketing Insights</h2>
+<div class="card"><p><b>Date shown:</b> <span id="td"></span>. <span class="badge">Not live research</span></p>
+<p>No live market research is connected to this prototype, so no statistics or “popular” claims are made here. The items below are general, AI-style suggestions to test, not verified findings. Check current platform insights and your own customer survey before relying on them.</p>
+<ul><li><b>Short-form video:</b> behind-the-scenes, product demos and packing orders.</li><li><b>Social proof:</b> customer reviews and testimonials.</li><li><b>Promotions:</b> limited-time offers, bundles, referral rewards.</li><li><b>Seasonal ideas:</b> back-to-school, payday sales, Christmas season, Valentine’s, exam week treats.</li><li><b>Content formats:</b> carousels, polls, “day in the life” of a student seller.</li></ul>
+<p class="hint">Sources: none (suggestions only). Add real sources when live research is available.</p>
+<button id="tai">Ask AI for more ideas for my business</button><div class="out" id="tout" hidden></div></div></section>
+
+<section id="survey" hidden><h2>Survey Results and Business Insights</h2>
+<div class="card"><p>Paste CSV or upload a .csv file (export Excel sheets as CSV). First row = column names. Use semicolons for multiple answers in one cell.</p>
+<label for="csvf">Upload CSV</label><input type="file" id="csvf" accept=".csv,text/csv">
+<label for="csvt">Or paste data</label><textarea id="csvt" rows="6"></textarea>
+<button id="an2">Analyze Survey</button><button class="alt" id="samp">Load sample data</button><span id="se" class="err" role="alert"></span></div>
+<div id="sres" hidden><div class="card"><h2>Key Findings <span class="badge" id="sm"></span></h2><div id="kf"></div></div><div id="charts"></div>
+<div class="card"><h2>Strategies</h2><div class="out" id="ss"></div><button class="alt" data-copy="ss">Copy</button><button class="alt" id="sai">Ask AI for a summary</button><div class="out" id="sout" hidden></div></div></div></section>
+
+<section id="plan" hidden><h2>Marketing Action Plan</h2><div class="card" id="pl"><p>Analyze your business first to get a plan adapted to you.</p></div></section>
+
+<section id="about" hidden><h2>About Us</h2><div class="card"><p>StudentBiz AI helps student entrepreneurs understand customers and plan affordable marketing. This is a prototype. If AI is unavailable it runs in a clearly labeled <b>demo mode</b> with template responses. Survey numbers are always calculated from the data you provide, never invented. No API keys are stored in this page.</p></div></section>
+</main><footer>StudentBiz AI prototype · Advice is informational and results are not guaranteed.</footer>
+<script>
+const $=id=>document.getElementById(id),V=["home","analysis","ai","trends","survey","plan","about"],
+L={home:"Home",analysis:"Business Analysis",ai:"AI Marketing Assistant",trends:"Trending Insights",survey:"Survey Analysis",plan:"Marketing Action Plan",about:"About Us"},
+CH=["Low sales","Few customers","Low social media engagement","Difficulty creating promotional content","Strong competition","Changing consumer preferences","Lack of marketing knowledge"];
+let B=null,sample=null,dl=null,S={};
+$("nav").innerHTML=V.map(v=>`<a href="#${v}">${L[v]}</a>`).join("");
+$("ch").innerHTML=CH.map((c,i)=>`<label><input type="checkbox" name="ch" value="${c}"> ${c}</label>`).join("");
+$("td").textContent=new Date().toLocaleDateString("en-PH",{dateStyle:"long"});
+function route(){let h=location.hash.slice(1);if(!V.includes(h))h="home";V.forEach(v=>$(v).hidden=v!==h);document.querySelectorAll("#nav a").forEach(a=>a.toggleAttribute("aria-current",a.getAttribute("href")==="#"+h)||a.removeAttribute("aria-current"));document.querySelectorAll("#nav a").forEach(a=>{if(a.getAttribute("href")==="#"+h)a.setAttribute("aria-current","page")});document.title=L[h]+" · StudentBiz AI";}
+addEventListener("hashchange",route);route();
+document.addEventListener("click",e=>{const t=e.target;if(t.dataset.go){location.hash=t.dataset.go;$("main").focus()}
+if(t.dataset.copy){navigator.clipboard.writeText($(t.dataset.copy).textContent).then(()=>t.textContent="Copied ✓",()=>t.textContent="Copy failed");setTimeout(()=>t.textContent="Copy",1800)}
+if(t.dataset.dl)save(t.dataset.dl+".txt",$(t.dataset.dl).textContent)});
+async function save(fn,txt){try{if(dl){await dl.save({filename:fn,data:txt});return}}catch(e){if(e&&e.code!=="unavailable")return}
+const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([txt],{type:"text/plain"}));a.download=fn;a.click()}
+(async()=>{try{sample=await claude.use("sample");dl=await claude.use("downloads")}catch(e){}})();
+async function ai(prompt,demo){if(sample){try{const r=await sample(prompt,{cache:false});return{t:r.text,m:"AI-generated"}}catch(e){}}return{t:demo,m:"Demo mode · sample response"}}
+const ctx=()=>B?`Business: ${B.name} (${B.type}). Offers: ${B.prod}. Customers: ${B.cust}. Platform: ${B.plat}. Challenges: ${B.ch.join(", ")||"none given"}. Current strategy: ${B.cur||"none"}. Budget: ${B.bud?"₱"+B.bud:"not given"}. Goals: ${B.goal||"not given"}.`:"No business info yet.";
+function demoAnalysis(){const c=B.ch.length?B.ch.join(", "):"none selected";return`BUSINESS SITUATION\n${B.name} sells ${B.prod} (${B.type}) to ${B.cust}, mainly through ${B.plat}. Challenges: ${c}.\n\nPOSSIBLE REASONS\n• Customers may not yet know about ${B.name} or may not see a clear reason to buy now.\n• Posts may not show the product in use or include a clear call to action.\n\nOPPORTUNITIES\n• Use ${B.plat==="TikTok"?"short videos":"clear photos and short videos"} that show your product and your story.\n• Ask happy customers for reviews and photos.\n• Test one limited-time offer or bundle.\n\nRECOMMENDED STRATEGIES\n1. Short-form product demos: low cost and easy to share.\n2. Limited-time promo or bundle: gives a reason to buy now.\n3. Referral reward: turns customers into promoters.\n4. Community posts in student groups: reaches your target customers directly.\n\n(Demo mode: template based on your answers, not live analysis.)`}
+function demoSales(){const b=B.bud?+B.bud:0;return`• Bundle: pair your best seller with a smaller item at a small discount.\n• Repeat customers: stamp card or “buy 5, get 1 free”.\n• Presentation: bright, clean photos with price and how to order.\n• Posting: 3–4 times a week on ${B.plat} at times your customers are online; test and compare.\n• Budget: ${b?(b<300?"keep to free tactics and small giveaways.":"set aside part for a small boosted post and prizes."):"start with free tactics; add spend only after something works."}`}
+function planRows(){const p=B.plat,b=+B.bud||0;return[["Day 1",`Improve product photos and your ${p} profile (name, bio, how to order)`],["Day 2",`Write 3 captions about ${B.prod.slice(0,40)} for ${B.cust.slice(0,30)}`],["Day 3",`Publish a short video: demo or behind-the-scenes`],["Day 4","Reply to comments and message 10 potential customers or groups"],["Day 5",b>=300?"Launch a limited-time offer and boost one post with a small part of your budget":"Launch a free limited-time offer or bundle"],["Day 6","Ask customers for feedback or a short review"],["Day 7","Compare views, messages and sales; keep what worked"]]}
+$("bf").addEventListener("submit",async e=>{e.preventDefault();let ok=true;const need={name:"business name",type:"business type",prod:"products or services",cust:"target customers"};
+for(const k in need){const bad=!$(k).value.trim();$("e-"+k).textContent=bad?`Please enter ${need[k]}.`:"";$(k).setAttribute("aria-invalid",bad);if(bad&&ok){$(k).focus();ok=false}}
+if(!ok){$("st").textContent="Please fix the errors above.";return}
+const ch=[...document.querySelectorAll("[name=ch]:checked")].map(x=>x.value);if($("chO").value.trim())ch.push($("chO").value.trim());
+B={name:$("name").value.trim(),type:$("type").value,prod:$("prod").value.trim(),cust:$("cust").value.trim(),plat:$("plat").value,ch,cur:$("cur").value.trim(),bud:$("bud").value,goal:$("goal").value.trim()};
+$("go").disabled=true;$("st").textContent="Analyzing…";
+const r=await ai(`You are a marketing coach for student entrepreneurs in the Philippines. ${ctx()}\nGive: 1) business situation, 2) biggest challenges and possible reasons, 3) opportunities, 4) 4 affordable strategies with why each helps. Plain text, short. Do not invent statistics or promise sales results.`,demoAnalysis());
+$("an").textContent=r.t;$("mode1").textContent=r.m;$("sales").textContent=demoSales();$("res").hidden=false;
+$("pl").innerHTML=`<p>For <b>${esc(B.name)}</b> on ${esc(B.plat)}${B.bud?`, budget ₱${esc(B.bud)}/month`:""}.</p><div class="scroll"><table><caption class="hint">7-day action plan</caption><thead><tr><th scope="col">Timeline</th><th scope="col">Recommended action</th></tr></thead><tbody>${planRows().map(r=>`<tr><td>${r[0]}</td><td>${esc(r[1])}</td></tr>`).join("")}</tbody></table></div><button class="alt" id="cp">Copy plan</button><button class="alt" id="dp">Download plan</button>`;
+$("go").disabled=false;$("st").innerHTML='<span class="ok">Done ✓ Results are below.</span>';$("res").scrollIntoView({behavior:"smooth"})});
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pt=()=>planRows().map(r=>r.join(": ")).join("\n");
+document.addEventListener("click",e=>{if(e.target.id==="cp")navigator.clipboard.writeText(pt());if(e.target.id==="dp")save("action-plan.txt",pt())});
+const demoGen=(t,tn)=>{const n=B.name,p=B.prod.slice(0,60);const tone={Friendly:"Hey friends! 😊",Professional:"Introducing",Persuasive:"Don’t miss out:",Trendy:"POV: you found your new fave ✨",Funny:"Warning: may cause serious cravings (or shopping)! 😂"}[tn];
+if(t.startsWith("TikTok"))return`${tone}\n[0–3s] Hook: show ${p} up close.\n[3–10s] Show how it’s made or used.\n[10–15s] Say what makes ${n} special.\n[End] “Order now! Link in bio.”`;
+return`${tone} ${n} has ${p} made for ${B.cust}. Message us to order today! #${n.replace(/\W/g,"")}\n\n(Demo mode template: ${t}, ${tn} tone.)`};
+$("gen").onclick=async()=>{if(!B)return;$("gout").textContent="Generating…";const t=$("ctype").value,tn=$("tone").value;
+const r=await ai(`${ctx()}\nWrite one ${t} in a ${tn} tone. Output only the content. No fake statistics.`,demoGen(t,tn));$("gout").textContent=r.t+(r.m.startsWith("Demo")?"":"")+`\n\n[${r.m}]`};
+function bz(q){q=q.toLowerCase();const p=B?B.plat:"your platform",n=B?B.name:"your business";
+if(/sale|increase/.test(q))return`To grow sales for ${n}: 1) post a clear offer with a deadline, 2) bundle your best seller, 3) ask past buyers for reviews. Track which one brings messages.`;
+if(/post|tiktok|content/.test(q))return`Try 3 posts this week on ${p}: a quick demo, a customer review, and a behind-the-scenes. Keep videos under 20 seconds with a clear call to action.`;
+if(/compet/.test(q))return`Stand out by being specific: your story as a student, your quality, fast replies and a unique bundle. Don’t only compete on price.`;
+if(/promo|offer|discount/.test(q))return`Affordable promos: limited-time 24-hour deal, “buy 2 get small freebie”, referral discount, and a stamp card for repeat buyers.`;
+return`Good question! Start small: pick one platform (${p}), one offer, and one week to test. Tell me more about your customers and I’ll tailor it.`}
+$("ask").onclick=async()=>{const q=$("q").value.trim();if(!q)return;$("q").value="";const c=$("chat");c.insertAdjacentHTML("beforeend",`<div class="m u">${esc(q)}</div>`);
+const r=await ai(`You are BizBuddy, a friendly marketing assistant for student entrepreneurs. ${ctx()}\nAnswer briefly (under 120 words), practical, affordable, personalized. No guaranteed results or invented statistics.\nQuestion: ${q}`,bz(q)+(B?"":"\n(Tip: fill out the business form for personalized answers.)"));
+c.insertAdjacentHTML("beforeend",`<div class="m b">${esc(r.t)}${r.m.startsWith("Demo")?"\n[Demo mode]":""}</div>`);c.scrollTop=c.scrollHeight};
+$("q").addEventListener("keydown",e=>{if(e.key==="Enter")$("ask").click()});
+$("tai").onclick=async()=>{const o=$("tout");o.hidden=false;o.textContent="Thinking…";const r=await ai(`${ctx()}\nSuggest 5 marketing ideas to test for this student business. Label them as suggestions, not research. Do not state statistics.`,"Demo mode: try short product demos, a review-sharing campaign, a limited-time bundle, a referral reward, and a seasonal promo. These are untested suggestions.");o.textContent=r.t+`\n\n[${r.m} · suggestions, not research findings · ${new Date().toLocaleDateString()}]`};
+/* survey */
+const SAMPLE=`Platform,Favorite product,Buying factor,Challenge\n`+[["TikTok","Milk tea","Price","Too many sellers"],["Facebook","Snacks","Quality;Price","Slow delivery"],["TikTok","Milk tea","Price","Too many sellers"],["Instagram","Shirts","Style","High prices"],["TikTok","Snacks","Price","Too many sellers"],["Facebook","Milk tea","Reviews","Unclear info"],["TikTok","Shirts","Style;Reviews","High prices"],["Instagram","Milk tea","Quality","Too many sellers"],["TikTok","Snacks","Price;Reviews","Slow delivery"],["Facebook","Snacks","Price","Unclear info"],["TikTok","Milk tea","Price","Too many sellers"],["Shopee","Shirts","Reviews;Price","High prices"]].map(r=>r.join(",")).join("\n");
+$("samp").onclick=()=>{$("csvt").value=SAMPLE;S.sample=true;run()};$("an2").onclick=()=>{S.sample=$("csvt").value.trim()===SAMPLE;run()};
+$("csvf").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{$("csvt").value=r.result;S.sample=false;run()};r.onerror=()=>$("se").textContent="Could not read the file.";r.readAsText(f)};
+function parse(t){const rows=[];let r=[],c="",q=false;for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch==='"'&&t[i+1]==='"'){c+='"';i++}else if(ch==='"')q=false;else c+=ch}else if(ch==='"')q=true;else if(ch===","){r.push(c);c=""}else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;r.push(c);c="";if(r.some(x=>x.trim()))rows.push(r);r=[]}else c+=ch}r.push(c);if(r.some(x=>x.trim()))rows.push(r);return rows}
+function run(){$("se").textContent="";const rows=parse($("csvt").value);if(rows.length<2){$("se").textContent="Please provide a header row and at least one response.";return}
+const H=rows[0].map(h=>h.trim()),D=rows.slice(1),cols=[];
+H.forEach((h,i)=>{const cnt={};let blank=0;D.forEach(r=>{const v=(r[i]||"").trim();if(!v){blank++;return}v.split(";").forEach(x=>{x=x.trim();if(x)cnt[x]=(cnt[x]||0)+1})});const e=Object.entries(cnt).sort((a,b)=>b[1]-a[1]);if(e.length&&e.length<=12)cols.push({h,e,blank,n:D.length-blank})});
+if(!cols.length){$("se").textContent="No chartable columns found (needs columns with 12 or fewer distinct answers).";return}
+S.cols=cols;S.n=D.length;$("sres").hidden=false;$("sm").textContent=S.sample?"Sample data":"Your data";
+$("kf").innerHTML=`<p><b>${D.length}</b> responses, ${H.length} columns.</p><ul>`+cols.map(c=>`<li><b>${esc(c.h)}:</b> most common is “${esc(c.e[0][0])}” (${c.e[0][1]} of ${c.n} answers, ${Math.round(c.e[0][1]/c.n*100)}%)${c.blank?`. Missing: ${c.blank} blank`:""}</li>`).join("")+"</ul>";
+$("charts").innerHTML=cols.map(c=>`<div class="card"><h3>${esc(c.h)}</h3><div role="img" aria-label="Bar chart for ${esc(c.h)}: ${c.e.map(x=>esc(x[0])+" "+x[1]).join(", ")}">${c.e.map(([k,v])=>`<div class="bar"><span>${esc(k)}</span><i style="width:${v/c.e[0][1]*100}%"></i><span>${v} (${Math.round(v/c.n*100)}%)</span></div>`).join("")}</div></div>`).join("");
+$("ss").textContent="Based on your data:\n"+cols.map(c=>`• ${c.h}: lead with “${c.e[0][0]}”${c.e[1]?`, then “${c.e[1][0]}”`:""}. Build offers and content around it.`).join("\n")+"\n\nNote: percentages are calculated from the responses you provided. Small samples may not represent all customers.";$("sout").hidden=true}
+$("sai").onclick=async()=>{if(!S.cols)return;const o=$("sout");o.hidden=false;o.textContent="Summarizing…";const d=S.cols.map(c=>c.h+": "+c.e.map(x=>x[0]+"="+x[1]).join(", ")).join("\n");
+const r=await ai(`Summarize this survey (${S.n} responses) for a student business. Use ONLY these counts, invent nothing, mention limits of small samples. Sections: Key Findings, Consumer Preferences, Common Challenges, Marketing Opportunities, Recommended Strategies.\n${d}`,"Demo mode: see Key Findings and the charts above, all calculated from your data. Connect AI for a written summary.");o.textContent=r.t+`\n\n[${r.m}]`};
+</script></body></html>
